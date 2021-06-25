@@ -27,7 +27,7 @@ background: url("https://unsplash.com/photos/R401qwThw7w")
 st.markdown(bg_image,unsafe_allow_html=True)
 st.title("Stock Price Predictor Web App")
 
-stock_df = pd.read_csv(r"C:\Users\visha\Downloads\EQUITY_L.csv")
+stock_df = pd.read_csv(r"EQUITY_L.csv")
 for index,row in stock_df.iterrows():
     if int(row[' DATE OF LISTING'][-4:])>2015:
         stock_df = stock_df.drop(index)
